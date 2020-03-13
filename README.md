@@ -11,7 +11,7 @@ python main.py
 ```
 
 <p align="center">
-<img src="images/screenshot.PNG"
+<img src="images/screenshot.png"
 
 </p>
 
