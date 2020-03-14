@@ -10,9 +10,13 @@ cd Tic-Tac-Toe
 python main.py
 ```
 
+<p align="center">
+<img src="/images/preview.gif">
+</p>
+
 ## Screenshots
 <p align="center">
-<img width=1000 src="images/screenshot.png"
+<img width=1000 src="/images/screenshot.png">
 
 </p>
 
