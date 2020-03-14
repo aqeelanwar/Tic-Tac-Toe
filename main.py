@@ -131,7 +131,7 @@ class Tic_Tac_Toe():
 
         return gameover
 
-    def display_gamover(self):
+    def display_gameover(self):
 
         if self.X_wins:
             self.X_score += 1
@@ -188,7 +188,7 @@ class Tic_Tac_Toe():
 
             # Check if game is concluded
             if self.is_gameover():
-                self.display_gamover()
+                self.display_gameover()
                 # print('Done')
         else:  # Play Again
             self.canvas.delete("all")
