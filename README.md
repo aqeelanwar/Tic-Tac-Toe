@@ -32,3 +32,4 @@ python main.py
 ## Author
 [Aqeel Anwar](https://www.prism.gatech.edu/~manwar8)
 
+[![Run on Repl.it](https://repl.it/badge/github/aqeelanwar/Tic-Tac-Toe)](https://repl.it/github/aqeelanwar/Tic-Tac-Toe)
