@@ -8,8 +8,8 @@ import numpy as np
 size_of_board = 600
 symbol_size = (size_of_board / 3 - size_of_board / 8) / 2
 symbol_thickness = 50
-symbol_X_color = '#EE4035'
-symbol_O_color = '#0492CF'
+symbol_X_color = '#4B0082'
+symbol_O_color = '#FF8C00'
 Green_color = '#7BC043'
 
 
@@ -172,9 +172,9 @@ class Tic_Tac_Toe():
         gameover = self.X_wins or self.O_wins or self.tie
 
         if self.X_wins:
-            print('X wins')
-        if self.O_wins:
             print('O wins')
+        if self.O_wins:
+            print('X wins')
         if self.tie:
             print('Its a tie')
 
