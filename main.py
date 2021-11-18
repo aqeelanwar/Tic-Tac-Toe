@@ -7,10 +7,11 @@ import numpy as np
 
 size_of_board = 600
 symbol_size = (size_of_board / 3 - size_of_board / 8) / 2
-symbol_thickness = 35
-symbol_X_color = '#008000'
-symbol_O_color = '#FFA500'
+symbol_thickness = 30 # changed thickness from 35
+symbol_X_color = '#F76DA4' #'#008000'- changed to pink
+symbol_O_color = '#6DE9F7' #'#FFA500'- changed to blue
 Green_color = '#7BC043'
+light_gray = '#7c8182' #added variable defining a specific gray fill color
 
 
 class Tic_Tac_Toe():
@@ -109,9 +110,10 @@ class Tic_Tac_Toe():
         self.reset_board = True
 
         score_text = 'Click to play again \n'
-        self.canvas.create_text(size_of_board / 2, 15 * size_of_board / 16, font="cmr 20 bold", fill="gray",
+        #self.canvas.create_text(size_of_board / 2, 15 * size_of_board / 16, font="cmr 20 bold", fill="gray",
                                 text=score_text)
-
+        self.canvas.create_text(size_of_board / 2, 15 * size_of_board / 16, font="cmr 20 bold", fill=light_gray,
+                                text=score_text)
     # ------------------------------------------------------------------
     # Logical Functions:
     # The modules required to carry out game logic
