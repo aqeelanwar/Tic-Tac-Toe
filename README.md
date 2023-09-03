@@ -7,7 +7,7 @@ This repository contains python based interactive Tic-Tac-Toe game.
 ```
 git clone https://github.com/aqeelanwar/Tic-Tac-Toe.git
 cd Tic-Tac-Toe
-pip install -r requirments.txt
+pip install -r requirements.txt
 python main.py
 ```
 
