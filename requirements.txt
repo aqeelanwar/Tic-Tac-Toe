@@ -1,4 +1,2 @@
-greenlet==2.0.1
-msgpack==1.0.4
-pynvim==0.4.3
-vboxapi==1.0
+numpy==1.25.2
+tk==0.1.0
