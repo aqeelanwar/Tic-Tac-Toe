@@ -13,7 +13,7 @@ symbol_O_color = '#0492CF'
 Green_color = '#7BC043'
 
 
-class Tic_Tac_Toe():
+class Tic_Tac_Toe:
     # ------------------------------------------------------------------
     # Initialization Functions:
     # ------------------------------------------------------------------
@@ -126,10 +126,7 @@ class Tic_Tac_Toe():
         return np.array(grid_position // (size_of_board / 3), dtype=int)
 
     def is_grid_occupied(self, logical_position):
-        if self.board_status[logical_position[0]][logical_position[1]] == 0:
-            return False
-        else:
-            return True
+        return self.board_status[logical_position[0]][logical_position[1]] == 0
 
     def is_winner(self, player):
 
@@ -155,7 +152,7 @@ class Tic_Tac_Toe():
 
         r, c = np.where(self.board_status == 0)
         tie = False
-        if len(r) == 0:
+        if not len(r):
             tie = True
 
         return tie
@@ -185,7 +182,7 @@ class Tic_Tac_Toe():
 
 
     def click(self, event):
-        grid_position = [event.x, event.y]
+        grid_position = (event.x, event.y)
         logical_position = self.convert_grid_to_logical_position(grid_position)
 
         if not self.reset_board:
